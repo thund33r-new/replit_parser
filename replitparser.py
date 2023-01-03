@@ -3,6 +3,8 @@ import random
 import string
 import time
 
+replitnames = []
+
 # Проверка подключен ли пользователь к интернету
 url = "https://replit.com"
 try:
@@ -17,7 +19,6 @@ except requests.exceptions.ConnectionError:
 time.sleep(4)
 kolichestvo = input('Количество никнеймов: ')
 simvols = input('Количество символов в никнейме: ')
-replitnames = []
 time.sleep(1)
 print('Генерация никнеймов была запущена.')
 time.sleep(3)
